@@ -1,0 +1,19 @@
+#include <stdio.h>
+int main(void){
+    int x;
+    int i;
+    int first=1;
+    int second=1;
+    int temp;
+    printf("kaçıncı fibonacci Sayısını istiyorsunuz");
+    scanf("%d",&x);
+    if(x>2){
+        for(i=3;i<=x;i++){
+            temp=first+second;
+            first=second;
+            second=temp;
+        }
+        printf("%d. Fibonacci sayısı:%d\n",x,temp);
+    }
+    else printf("%d. Fibonacci sayısı:%d\n",x,first);
+    }
